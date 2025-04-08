@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: comm_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "d:\temp\RSP4A3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\srt_data_acquisition_module\srt_data_acquisition_dll" /I "f:\lry_comm\lry_comm_dll_050520" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "COMM_DLL_EXPORTS" /D "USE_LRY_COMM_STUFF" /Fp"e:\obj\lry_comm\release/lry_comm_dll.pch" /YX /Fo"e:\obj\lry_comm\release/" /Fd"e:\obj\lry_comm\release/" /FD /c 
+"F:\lry_comm\lry_comm_dll_050520\backgrnd.c"
+"F:\lry_comm\lry_comm_dll_050520\commbufs.c"
+"F:\lry_comm\lry_comm_dll_050520\commport.c"
+"F:\lry_comm\lry_comm_dll_050520\errors.c"
+"F:\lry_comm\lry_comm_dll_050520\fifo.c"
+"F:\lry_comm\lry_comm_dll_050520\lry_comm_interface.c"
+"F:\lry_comm\lry_comm_dll_050520\winfile.c"
+]
+Creating command line "cl.exe @d:\temp\RSP4A3.tmp" 
+Creating temporary file "d:\temp\RSP4A4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"e:\obj\lry_comm\release/srt_comm_dll.pdb" /machine:I386 /out:"e:\obj\lry_comm\srt_comm_dll.dll" /implib:"e:\obj\lry_comm\release/srt_comm_dll.lib" 
+e:\obj\lry_comm\release\backgrnd.obj
+e:\obj\lry_comm\release\commbufs.obj
+e:\obj\lry_comm\release\commport.obj
+e:\obj\lry_comm\release\errors.obj
+e:\obj\lry_comm\release\fifo.obj
+e:\obj\lry_comm\release\lry_comm_interface.obj
+e:\obj\lry_comm\release\winfile.obj
+]
+Creating command line "link.exe @d:\temp\RSP4A4.tmp"
+<h3>Output Window</h3>
+Compiling...
+backgrnd.c
+commbufs.c
+commport.c
+errors.c
+fifo.c
+lry_comm_interface.c
+winfile.c
+Linking...
+   Creating library e:\obj\lry_comm\release/srt_comm_dll.lib and object e:\obj\lry_comm\release/srt_comm_dll.exp
+<h3>
+--------------------Configuration: srt_data_acquisition_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "d:\temp\RSP4A8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "f:\lry_comm" /I "F:\srt_data_acquisition_module\srt_data_acquisition_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SRT_DATA_ACQUISITION_DLL_EXPORTS" /Fp"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/srt_data_acquisition_dll.pch" /YX /Fo"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/" /Fd"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/" /FD /c 
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_daq_misc.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_daq_packets.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_daq_xc_time.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_data_acquisition_api.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_data_acquisition_dll.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\srt_data_acquisition_variables.c"
+"F:\srt_data_acquisition_module\srt_data_acquisition_dll\tab_delimited_text_file_class.c"
+]
+Creating command line "cl.exe @d:\temp\RSP4A8.tmp" 
+Creating temporary file "d:\temp\RSP4A9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /dll /incremental:no /pdb:"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/srt_data_acquisition_dll.pdb" /machine:I386 /out:"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll.dll" /implib:"e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/srt_data_acquisition_dll.lib" 
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_daq_misc.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_daq_packets.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_daq_xc_time.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_data_acquisition_api.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_data_acquisition_dll.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_data_acquisition_variables.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\tab_delimited_text_file_class.obj
+e:\obj\lry_comm\release\srt_comm_dll.lib
+]
+Creating command line "link.exe @d:\temp\RSP4A9.tmp"
+<h3>Output Window</h3>
+Compiling...
+srt_daq_misc.c
+srt_daq_packets.c
+srt_daq_xc_time.c
+srt_data_acquisition_api.c
+srt_data_acquisition_dll.c
+srt_data_acquisition_variables.c
+tab_delimited_text_file_class.c
+Linking...
+   Creating library e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/srt_data_acquisition_dll.lib and object e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release/srt_data_acquisition_dll.exp
+<h3>
+--------------------Configuration: srt_data_acquisition_module_tester - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/srt_data_acquisition_module_tester.res" /d "NDEBUG" "F:\srt_data_acquisition_module\srt_data_acquisition_module_tester\srt_data_acquisition_module_tester.rc"" 
+Creating temporary file "d:\temp\RSP4AD.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\srt_data_acquisition_module\srt_data_acquisition_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/srt_data_acquisition_module_tester.pch" /Yu"stdafx.h" /Fo"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/" /Fd"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/" /FD /c 
+"F:\srt_data_acquisition_module\srt_data_acquisition_module_tester\srt_data_acquisition_module_tester.cpp"
+"F:\srt_data_acquisition_module\srt_data_acquisition_module_tester\srt_data_acquisition_module_tester_dialog_box.cpp"
+]
+Creating command line "cl.exe @d:\temp\RSP4AD.tmp" 
+Creating temporary file "d:\temp\RSP4AE.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\srt_data_acquisition_module\srt_data_acquisition_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/srt_data_acquisition_module_tester.pch" /Yc"stdafx.h" /Fo"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/" /Fd"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/" /FD /c 
+"F:\srt_data_acquisition_module\srt_data_acquisition_module_tester\StdAfx.cpp"
+]
+Creating command line "cl.exe @d:\temp\RSP4AE.tmp" 
+Creating temporary file "d:\temp\RSP4AF.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release/srt_data_acquisition_module_tester.pdb" /machine:I386 /out:"e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester/srt_data_acquisition_module_tester.exe" 
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release\srt_data_acquisition_module_tester.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release\srt_data_acquisition_module_tester.res
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release\srt_data_acquisition_module_tester_dialog_box.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_module_tester\release\StdAfx.obj
+e:\obj\srt_data_acquisition_module\srt_data_acquisition_dll\release\srt_data_acquisition_dll.lib
+]
+Creating command line "link.exe @d:\temp\RSP4AF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+srt_data_acquisition_module_tester.cpp
+srt_data_acquisition_module_tester_dialog_box.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+srt_data_acquisition_module_tester.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

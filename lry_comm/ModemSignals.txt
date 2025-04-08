@@ -1,0 +1,97 @@
+Hi Ernie -
+
+Make the following additions to the commport source code
+to use the modem signalling lines on the serial port.
+The files affected are winfile.h, winfile.c and backgrnd.c.
+I don't want to send you all new code because you've made
+some changes that we don't want to lose.  Let me know if
+you have any questions.
+
+Larry
+03may02
+
+/* ************************************** */
+
+//
+// In file WINFILE.H add this declaration:
+//
+BOOL win_escape_comm_function( DWORD function );
+
+/* ************************************** */
+
+//
+// In file WINFILE.C add this function definition:
+//
+BOOL win_escape_comm_function( DWORD function )
+{
+   BOOL result = ( hComm != INVALID_HANDLE_VALUE );
+   
+   if ( result )
+   {
+      result = EscapeCommFunction( hComm, function );
+      
+      if ( !result )
+      {
+         report_windows_error( __FILE__, __LINE__, "EscapeCommFunction failed");
+      }
+   }
+
+   return result;
+}
+
+/* ************************************** */
+
+//
+// In file WINFILE.C you should add these comments from MS documentation:
+//
+// call Win32 API EscapeCommFunction( function )
+// to set serial-port control lines
+// 
+// function = 
+// CLRDTR   = Clears the DTR (data-terminal-ready) signal. 
+// CLRRTS   = Clears the RTS (request-to-send) signal. 
+// SETDTR   = Sends the DTR (data-terminal-ready) signal. 
+// SETRTS   = Sends the RTS (request-to-send) signal. 
+// SETXOFF  = Causes transmission to act as if an XOFF character has been received. 
+// SETXON   = Causes transmission to act as if an XON character has been received.
+// SETBREAK = Suspends character transmission and places the transmission line
+//            in a break state until the ClearCommBreak function is called
+//            (or EscapeCommFunction is called with the CLRBREAK extended
+//            function code). The SETBREAK extended function code is identical
+//            to the SetCommBreak function. Note that this extended function
+//            does not flush data that has not been transmitted. 
+// CLRBREAK = Restores character transmission and places the transmission line
+//            in a nonbreak state. The CLRBREAK extended function code is
+//            identical to the ClearCommBreak function. 
+//
+
+/* ************************************** */
+
+//
+// In file BACKGRND.C add the following two comment lines and one code line
+// just before entering the "loop until termination event" while-loop
+// (approximately line 212):
+
+   // now we're ready to receive, so set "Data Terminal Ready"
+   // ignore return value for now VVV
+   win_escape_comm_function( SETDTR );
+
+//
+// In context, the new code will read:
+//
+   events_list[0] = os_read.hEvent;
+   events_list[1] = os_status.hEvent;
+   events_list[2] = hEvent_stop_read_proc;
+
+   // now we're ready to receive, so set "Data Terminal Ready"
+   // ignore return value for now VVV
+   win_escape_comm_function( SETDTR );  /* added 03may02 lry */
+
+   /* ************************************ */
+   /* *** loop until termination event *** */
+   /* ************************************ */
+
+   while ( !terminate_thread  )
+   {
+
+/* ************************************** */

@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by timer_app.rc
+//
+#define HIDC_EDIT_ODBC_USER_DATA_SOURCE_NAME \
+                                        0x808a0466    // IDD_DIALOG_ADVANCED_SETUP

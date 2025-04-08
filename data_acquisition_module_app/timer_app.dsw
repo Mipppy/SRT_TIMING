@@ -1,0 +1,80 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "lry_comm_static_lib"=..\lry_comm\lry_comm_static_lib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "timer_app"=.\timer_app.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name xc_fifo_dll.
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name xc_timer_static_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name xc_db_static_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name xc_timer_dll
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "xc_db_static_lib"=.\xc_db_static_lib\xc_db_static_lib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "xc_timer_dll"=.\xc_timer_dll\xc_timer_dll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name lry_comm_static_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

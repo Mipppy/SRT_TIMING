@@ -1,0 +1,146 @@
+
+First comm_open () function is called.
+
+	It calls win_open_file (), and that is successful
+
+    Next,  win_modify_comm_timeouts () is called, and that is successful
+
+    Next,  win_modify_device_ctrl_block () is called and it fails when calling SetCommState ()
+
+    If I comment out the call to SetCommState (), then it succeeds.
+
+When comm redirecter is successful, I get a dialog box "Successfully redirected COM3 to service" that flashes on the screen.
+
+When comm redirecter fails, I get a dialog box indicating that comm port redirector is attempting, and then another dialog box saying that it failed.  These are too fast to write down.
+
+
+/****************************************/
+
+int xxDLL_EXPORT comm_open ( int port, long baudrate, int parity_flag, rx_callback_func process_rx_info )
+
+{           
+   BOOL port_is_open = FALSE;
+
+   comm_close ();
+
+   if ( win_open_file( port ) == TRUE )            
+
+   {
+
+        if ( win_modify_comm_timeouts() == TRUE )
+
+        {
+
+            if ( win_modify_device_ctrl_block ( baudrate, (BYTE) parity_flag, ONESTOPBIT ) == TRUE )
+
+            {
+
+                if ( win_modify_event_mask( EV_BREAK | EV_ERR ) == TRUE )
+
+                {
+                    create_commbufs( sizeof(read_t), sizeof(write_t) );
+                
+                    #if ( 0 )  // 4/0901
+                      start_read_thread();
+                      set_read_processor(  process_rx_info ); 
+                      start_write_thread();
+                    #endif               
+
+                    port_is_open = TRUE;
+                }
+                else
+                {
+                    win_restore_device_ctrl_block();
+                }
+            }
+            else
+            {
+                win_restore_comm_timeouts();
+            }
+        }
+        else
+        {
+            win_close_file();
+        }
+    }
+
+    if ( port_is_open ) {
+      win_set_bufsizes( WIN_TRANSMIT_FIFO_BUFSIZE, WIN_RECEIVE_FIFO_BUFSIZE );
+      #if ( 1 )  // 4/0901
+        start_read_thread();
+        set_read_processor(  process_rx_info ); 
+        start_write_thread();
+      #endif                 
+    }
+    
+    return port_is_open;
+}
+
+
+/****************************************/
+
+
+BOOL win_modify_device_ctrl_block( DWORD baudrate, BYTE parity, BYTE stopbits )
+
+{
+	BOOL result = ( hComm != INVALID_HANDLE_VALUE ) ;
+
+	// if this is the first call, get the existing DCB
+	if ( result && !dcb_is_initialized )
+	{
+		dcb[OLD].DCBlength = sizeof( DCB );
+
+		if ( GetCommState( hComm, &dcb[OLD] ) != 0 )
+		{
+			// copy the old to the new so we don't need to override every element
+			memcpy( &dcb[NEW], &dcb[OLD], sizeof( DCB ) );
+			dcb_is_initialized = TRUE;
+		}
+		else
+		{
+			report_windows_error( __FILE__, __LINE__, "GetCommTimeouts failed" );
+			result = FALSE;
+		}
+	}
+
+	if ( result )
+
+	{
+
+		dcb[NEW].BaudRate = baudrate;          // *** INPUT ARGUMENT ***
+		dcb[NEW].fBinary = TRUE;               // Binary mode; no EOF check 
+		dcb[NEW].fParity = FALSE;              // Enable parity checking. 
+		dcb[NEW].fOutxCtsFlow = FALSE;         // No CTS output flow control 
+		dcb[NEW].fOutxDsrFlow = FALSE;         // No DSR output flow control 
+		dcb[NEW].fDtrControl = DTR_CONTROL_DISABLE;  // DTS flow control
+		dcb[NEW].fDsrSensitivity = FALSE;      // DSR sensitivity 
+		dcb[NEW].fTXContinueOnXoff = TRUE;     // XOFF continues Tx 
+		dcb[NEW].fOutX = FALSE;                // No XON/XOFF out flow control 
+		dcb[NEW].fInX = FALSE;                 // No XON/XOFF in flow control 
+		dcb[NEW].fErrorChar = FALSE;           // Disable error replacement 
+		dcb[NEW].fNull = FALSE;                // Disable null stripping
+		dcb[NEW].fRtsControl = RTS_CONTROL_DISABLE; // RTS flow control 
+		dcb[NEW].fAbortOnError = TRUE;         // Force a ReadFile/WriteFile error on overrun
+		dcb[NEW].ByteSize = 8;                 // Number of bits/bytes, 4-8 
+		dcb[NEW].XonLim = 0;
+		dcb[NEW].XoffLim = 0;
+		dcb[NEW].Parity = parity;              // *** INPUT ARGUMENT ***
+		dcb[NEW].StopBits = stopbits;          // *** INPUT ARGUMENT ***
+
+#if ( 0 )   ////////////////////////
+
+		if ( SetCommState ( hComm, &dcb[NEW] ) == 0 )
+		{
+			report_windows_error( __FILE__, __LINE__, "SetCommState failed" );
+			result = FALSE;
+		}
+
+#endif
+
+	}
+
+	return result;
+}
+
+
+

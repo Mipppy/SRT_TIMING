@@ -1,0 +1,194 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xc_db_static_lib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP3D27.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\original_daq_module\xc_db_static_lib\release/xc_db_static_lib.pch" /Yu"stdafx.h" /Fo"e:\obj\original_daq_module\xc_db_static_lib\release/" /Fd"e:\obj\original_daq_module\xc_db_static_lib\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib\xc_db.cpp"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D27.tmp" 
+Creating temporary file "h:\TEMP\RSP3D28.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\original_daq_module\xc_db_static_lib\release/xc_db_static_lib.pch" /Yc"stdafx.h" /Fo"e:\obj\original_daq_module\xc_db_static_lib\release/" /Fd"e:\obj\original_daq_module\xc_db_static_lib\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib\StdAfx.cpp"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D28.tmp" 
+Creating command line "link.exe -lib /nologo /out:"e:\obj\original_daq_module\xc_db_static_lib\release\xc_db_static_lib.lib"  e:\obj\original_daq_module\xc_db_static_lib\release\StdAfx.obj e:\obj\original_daq_module\xc_db_static_lib\release\xc_db.obj "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+xc_db.cpp
+Creating library...
+<h3>
+--------------------Configuration: lry_comm_static_lib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP3D29.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"e:\obj\original_daq_module\lry_com_static_lib\release/lry_comm_static_lib.pch" /YX /Fo"e:\obj\original_daq_module\lry_com_static_lib\release/" /Fd"e:\obj\original_daq_module\lry_com_static_lib\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\backgrnd.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commbufs.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commport.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\errors.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\fifo.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile.c"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D29.tmp" 
+Creating temporary file "h:\TEMP\RSP3D2A.tmp" with contents
+[
+/nologo /out:"e:\obj\original_daq_module\lry_com_static_lib\release\lry_comm_static_lib.lib" 
+e:\obj\original_daq_module\lry_com_static_lib\release\backgrnd.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\commbufs.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\commport.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\errors.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\fifo.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\winfile.obj
+]
+Creating command line "link.exe -lib @h:\TEMP\RSP3D2A.tmp"
+<h3>Output Window</h3>
+Compiling...
+backgrnd.c
+commbufs.c
+commport.c
+errors.c
+fifo.c
+winfile.c
+Creating library...
+<h3>
+--------------------Configuration: xc_timer_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP3D2B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_fifo_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "XC_TIMER_DLL_EXPORTS" /Fp"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.pch" /YX /Fo"e:\obj\original_daq_module\xc_timer_dll\release/" /Fd"e:\obj\original_daq_module\xc_timer_dll\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\misc.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\packets.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\Stdio.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_fifo_DLL.C"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer.c"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D2B.tmp" 
+Creating temporary file "h:\TEMP\RSP3D2C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib advapi32.lib shell32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /dll /incremental:no /pdb:"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.pdb" /machine:I386 /def:".\xc_timer.def" /out:"e:\obj\original_daq_module\xc_timer_dll.dll" /implib:"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.lib" 
+e:\obj\original_daq_module\xc_timer_dll\release\misc.obj
+e:\obj\original_daq_module\xc_timer_dll\release\packets.obj
+e:\obj\original_daq_module\xc_timer_dll\release\Stdio.obj
+e:\obj\original_daq_module\xc_timer_dll\release\XC_fifo_DLL.obj
+e:\obj\original_daq_module\xc_timer_dll\release\xc_timer.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\lry_comm_static_lib.lib
+]
+Creating command line "link.exe @h:\TEMP\RSP3D2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+misc.c
+packets.c
+Stdio.c
+XC_fifo_DLL.C
+xc_timer.c
+Linking...
+   Creating library e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.lib and object e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.exp
+<h3>
+--------------------Configuration: timer_app - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP3D30.bat" with contents
+[
+@echo off
+copy "hlp\timer_app.cnt" e:\obj\original_daq_module\app\release
+]
+Creating command line "h:\TEMP\RSP3D30.bat"
+Creating temporary file "h:\TEMP\RSP3D31.bat" with contents
+[
+@echo off
+echo. >"hlp\srt_data_acquisition_module.hm"
+echo // Commands (ID_* and IDM_*) >>"hlp\srt_data_acquisition_module.hm"
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h >>"hlp\srt_data_acquisition_module.hm"
+echo. >>"hlp\srt_data_acquisition_module.hm"
+echo // Prompts (IDP_*) >>"hlp\srt_data_acquisition_module.hm"
+makehm IDP_,HIDP_,0x30000 resource.h >>"hlp\srt_data_acquisition_module.hm"
+echo. >>"hlp\srt_data_acquisition_module.hm"
+echo // Resources (IDR_*) >>"hlp\srt_data_acquisition_module.hm"
+makehm IDR_,HIDR_,0x20000 resource.h >>"hlp\srt_data_acquisition_module.hm"
+echo. >>"hlp\srt_data_acquisition_module.hm"
+echo // Dialogs (IDD_*) >>"hlp\srt_data_acquisition_module.hm"
+makehm IDD_,HIDD_,0x20000 resource.h >>"hlp\srt_data_acquisition_module.hm"
+echo. >>"hlp\srt_data_acquisition_module.hm"
+echo // Frame Controls (IDW_*) >>"hlp\srt_data_acquisition_module.hm"
+makehm IDW_,HIDW_,0x50000 resource.h >>"hlp\srt_data_acquisition_module.hm"
+]
+Creating command line "h:\TEMP\RSP3D31.bat"
+Creating command line "rc.exe /l 0x409 /fo"e:\obj\original_daq_module\app\release/timer_app.res" /d "NDEBUG" "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_app.rc"" 
+Copying contents file...
+        1 file(s) copied.
+Making help include file...
+Creating temporary file "h:\TEMP\RSP3D32.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"e:\obj\original_daq_module\app\release/" /Fp"e:\obj\original_daq_module\app\release/timer_app.pch" /Yu"stdafx.h" /Fo"e:\obj\original_daq_module\app\release/" /Fd"e:\obj\original_daq_module\app\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\configure_dlg.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\default_dlg.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\DialogAdvancedSetup.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\event_and_heat_dlg.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\InputBox.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\synch_dlg.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_app.cpp"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_appDlg.cpp"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D32.tmp" 
+Creating temporary file "h:\TEMP\RSP3D33.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"e:\obj\original_daq_module\app\release/" /Fp"e:\obj\original_daq_module\app\release/timer_app.pch" /Yc"stdafx.h" /Fo"e:\obj\original_daq_module\app\release/" /Fd"e:\obj\original_daq_module\app\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\StdAfx.cpp"
+]
+Creating command line "cl.exe @h:\TEMP\RSP3D33.tmp" 
+Creating temporary file "h:\TEMP\RSP3D34.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"e:\obj\original_daq_module\app\release/srt_data_acquisition_module.pdb" /machine:I386 /out:"e:\obj\original_daq_module\srt_data_acquisition_module.exe" 
+e:\obj\original_daq_module\app\release\configure_dlg.obj
+e:\obj\original_daq_module\app\release\default_dlg.obj
+e:\obj\original_daq_module\app\release\DialogAdvancedSetup.obj
+e:\obj\original_daq_module\app\release\event_and_heat_dlg.obj
+e:\obj\original_daq_module\app\release\InputBox.obj
+e:\obj\original_daq_module\app\release\StdAfx.obj
+e:\obj\original_daq_module\app\release\synch_dlg.obj
+e:\obj\original_daq_module\app\release\timer_app.obj
+e:\obj\original_daq_module\app\release\timer_appDlg.obj
+e:\obj\original_daq_module\app\release\timer_app.res
+e:\obj\original_daq_module\xc_db_static_lib\release\xc_db_static_lib.lib
+e:\obj\original_daq_module\xc_timer_dll\release\xc_timer_dll.lib
+]
+Creating command line "link.exe @h:\TEMP\RSP3D34.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+configure_dlg.cpp
+default_dlg.cpp
+DialogAdvancedSetup.cpp
+event_and_heat_dlg.cpp
+InputBox.cpp
+synch_dlg.cpp
+timer_app.cpp
+timer_appDlg.cpp
+Generating Code...
+Linking...
+   Creating library e:\obj\original_daq_module\srt_data_acquisition_module.lib and object e:\obj\original_daq_module\srt_data_acquisition_module.exp
+LINK : warning LNK4089: all references to "OLEAUT32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "ole32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+srt_data_acquisition_module.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+EXPORTS
+
+  dll_initialize_dll_task
+  dll_set_number_of_timers
+  dll_set_comm_port
+  dll_set_talk_time
+  dll_set_string_delimiter
+  dll_disable_left_justification_of_time_strings
+  dll_enable_left_justification_of_time_strings
+  dll_set_diagnostic_flags
+  dll_set_highest_record_received_for_this_device
+  dll_set_highest_record_number_in_database
+  dll_save_ini_file
+  dll_start_communicating_with_timers
+  dll_reset_timers
+  dll_synch_timers
+  dll_disable_timer_reset
+  dll_set_event_and_heat
+  dll_reset_all_timer_record_counters_to_zero
+  dll_delete_records_in_backup_text_file
+  dll_put_timer_structure_into_fifo
+  dll_get_next_timer_record
+  dll_delete_dll_fifo_records
+  dll_exit_routine
+  dll_get_character_from_terminal_fifo
+  dll_stop_communicating_with_timers
+  dll_generate_dummy_record
+  dll_test_function_call_passing_long
+  dll_test_function_call_passing_string
+  dll_print_timing_structure
+  dll_assign_default_values
+  dll_set_baud_rate
+
+  dll_get_pointer_to_configuration_structure
+  dll_get_pointer_to_global_variable_structure
+  dll_get_next_timer_structure
+  dll_get_next_timer_structure_old
+  dll_set_database_parameters
+  dll_set_timer_type_used
+  dll_set_password
+
+  dll_retransmit_data
+  dll_get_msec_since_last_communication

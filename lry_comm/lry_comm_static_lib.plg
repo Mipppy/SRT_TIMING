@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lry_comm_static_lib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP7FE0.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "f:\lry_comm" /I "f:\srt_timer_test" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"e:\obj\alpine_trainer\lry_com_static_lib\debug/lry_comm_static_lib.pch" /YX /Fo"e:\obj\alpine_trainer\lry_com_static_lib\debug/" /Fd"e:\obj\alpine_trainer\lry_com_static_lib\debug/" /FD /GZ /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\backgrnd.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commbufs.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commport.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\errors.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\fifo.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile.c"
+]
+Creating command line "cl.exe @h:\TEMP\RSP7FE0.tmp" 
+Creating temporary file "h:\TEMP\RSP7FE1.tmp" with contents
+[
+/nologo /out:"e:\obj\alpine_trainer\lry_com_static_lib\debug\lry_comm_static_lib.lib" 
+e:\obj\alpine_trainer\lry_com_static_lib\debug\backgrnd.obj
+e:\obj\alpine_trainer\lry_com_static_lib\debug\commbufs.obj
+e:\obj\alpine_trainer\lry_com_static_lib\debug\commport.obj
+e:\obj\alpine_trainer\lry_com_static_lib\debug\errors.obj
+e:\obj\alpine_trainer\lry_com_static_lib\debug\fifo.obj
+e:\obj\alpine_trainer\lry_com_static_lib\debug\winfile.obj
+]
+Creating command line "link.exe -lib @h:\TEMP\RSP7FE1.tmp"
+<h3>Output Window</h3>
+Compiling...
+backgrnd.c
+commbufs.c
+commport.c
+errors.c
+fifo.c
+winfile.c
+Creating library...
+
+
+
+<h3>Results</h3>
+lry_comm_static_lib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

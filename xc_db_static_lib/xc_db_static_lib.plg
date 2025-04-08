@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xc_db_static_lib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "d:\temp\RSP81.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "f:\xc_timer_app" /I "f:\xc_timer_app\common_code" /I "f:\xc_timer_app\xc_db_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\xc_timer_app\xc_db_static_lib\release/xc_db_static_lib.pch" /Yu"stdafx.h" /Fo"e:\obj\xc_timer_app\xc_db_static_lib\release/" /Fd"e:\obj\xc_timer_app\xc_db_static_lib\release/" /FD /c 
+"F:\xc_timer_app\xc_db_static_lib\xc_db.cpp"
+]
+Creating command line "cl.exe @d:\temp\RSP81.tmp" 
+Creating temporary file "d:\temp\RSP82.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "f:\xc_timer_app" /I "f:\xc_timer_app\common_code" /I "f:\xc_timer_app\xc_db_dll" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"e:\obj\xc_timer_app\xc_db_static_lib\release/xc_db_static_lib.pch" /Yc"stdafx.h" /Fo"e:\obj\xc_timer_app\xc_db_static_lib\release/" /Fd"e:\obj\xc_timer_app\xc_db_static_lib\release/" /FD /c 
+"F:\xc_timer_app\xc_db_static_lib\StdAfx.cpp"
+]
+Creating command line "cl.exe @d:\temp\RSP82.tmp" 
+Creating command line "link.exe -lib /nologo /out:"e:\obj\xc_timer_app\xc_db_static_lib\release\xc_db_static_lib.lib"  e:\obj\xc_timer_app\xc_db_static_lib\release\StdAfx.obj e:\obj\xc_timer_app\xc_db_static_lib\release\xc_db.obj "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+xc_db.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+xc_db_static_lib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,22 @@
+ 
+// Commands (ID_* and IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_TIMER_APP_DIALOG                   0x20066
+HIDD_CONFIGURE_DIALOG                   0x20081
+HIDD_FLASH_DIALOG                       0x20082
+HIDD_DIALOG_SYNCH                       0x20083
+HIDD_DIALOG_DEFAULT                     0x20084
+HIDD_DIALOG_INPUT_BOX                   0x20086
+HIDD_DIALOG_MESSAGE_BOX                 0x20087
+HIDD_DIALOG_ADVANCED_SETUP              0x2008A
+HIDD_DIALOG_SET_EVENT_AND_HEAT          0x2008B
+ 
+// Frame Controls (IDW_*) 

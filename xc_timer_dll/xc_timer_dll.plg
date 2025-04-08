@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lry_comm_static_lib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP800C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"e:\obj\original_daq_module\lry_com_static_lib\release/lry_comm_static_lib.pch" /YX /Fo"e:\obj\original_daq_module\lry_com_static_lib\release/" /Fd"e:\obj\original_daq_module\lry_com_static_lib\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\backgrnd.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commbufs.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commport.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\errors.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\fifo.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile.c"
+]
+Creating command line "cl.exe @h:\TEMP\RSP800C.tmp" 
+Creating temporary file "h:\TEMP\RSP800D.tmp" with contents
+[
+/nologo /out:"e:\obj\original_daq_module\lry_com_static_lib\release\lry_comm_static_lib.lib" 
+e:\obj\original_daq_module\lry_com_static_lib\release\backgrnd.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\commbufs.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\commport.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\errors.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\fifo.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\winfile.obj
+]
+Creating command line "link.exe -lib @h:\TEMP\RSP800D.tmp"
+<h3>Output Window</h3>
+Compiling...
+backgrnd.c
+commbufs.c
+commport.c
+errors.c
+fifo.c
+winfile.c
+Creating library...
+<h3>
+--------------------Configuration: xc_timer_dll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "h:\TEMP\RSP800F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_fifo_dll" /I "F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "XC_TIMER_DLL_EXPORTS" /Fp"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.pch" /YX /Fo"e:\obj\original_daq_module\xc_timer_dll\release/" /Fd"e:\obj\original_daq_module\xc_timer_dll\release/" /FD /c 
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\misc.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\packets.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer\common\Stdio.c"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_fifo_DLL.C"
+"F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer.c"
+]
+Creating command line "cl.exe @h:\TEMP\RSP800F.tmp" 
+Creating temporary file "h:\TEMP\RSP8010.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib advapi32.lib shell32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /dll /incremental:no /pdb:"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.pdb" /machine:I386 /def:".\xc_timer.def" /out:"e:\obj\original_daq_module\xc_timer_dll.dll" /implib:"e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.lib" 
+e:\obj\original_daq_module\xc_timer_dll\release\misc.obj
+e:\obj\original_daq_module\xc_timer_dll\release\packets.obj
+e:\obj\original_daq_module\xc_timer_dll\release\Stdio.obj
+e:\obj\original_daq_module\xc_timer_dll\release\XC_fifo_DLL.obj
+e:\obj\original_daq_module\xc_timer_dll\release\xc_timer.obj
+e:\obj\original_daq_module\lry_com_static_lib\release\lry_comm_static_lib.lib
+]
+Creating command line "link.exe @h:\TEMP\RSP8010.tmp"
+<h3>Output Window</h3>
+Compiling...
+misc.c
+packets.c
+Stdio.c
+XC_fifo_DLL.C
+xc_timer.c
+Linking...
+   Creating library e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.lib and object e:\obj\original_daq_module\xc_timer_dll\release/xc_timer_dll.exp
+
+
+
+<h3>Results</h3>
+xc_timer_dll.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,146 @@
+;Codewright Project File (do not remove or modify this line)
+[ProjInit]
+ProjSetConfigFlags=0x04010940
+ProjCheckPath='F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\\'
+
+[Files]
+PROJECT_FILES
+PROJECT_FILES
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\original_srt_data_acquisition_module.pjt
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_app.dsw
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_app.dsp
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer_dll.dsp
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib\xc_db_static_lib.dsp
+F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\lry_comm_static_lib.dsp
+DLL_C_FILES
+DLL_C_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_timer.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\win_misc.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\XC_fifo_DLL.C
+DLL_H_FILES
+DLL_H_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\XC_timer_DLL.H
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_timer_dll_functions.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_timer.def
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\CDEF.H
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\win_header.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_fifo_dll.def
+DLL_PROJECT_FILES
+DLL_PROJECT_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_timer_dll.dsp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER_DLL\xc_timer_dll.dsw
+APP Files
+APP Files
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\timer_appDlg.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\timer_appDlg.h
+Dialog_Boxes
+Dialog_Boxes
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\configure_dlg.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\configure_dlg.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\DialogAdvancedSetup.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\DialogAdvancedSetup.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\event_and_heat_dlg.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\event_and_heat_dlg.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\InputBox.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\InputBox.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\synch_dlg.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\synch_dlg.h
+TIMER_APP_PROJECT_FILES
+TIMER_APP_PROJECT_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\timer_app.dsp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\DATA_ACQUISITION_MODULE_APP\timer_app.dsw
+LRY_COMM_FILES
+LRY_COMM_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\backgrnd.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\backgrnd.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\commbufs.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\commbufs.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\commport.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\commport.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\errors.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\errors.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\fifo.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\fifo.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\winfile.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\winfile.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\ModemSignals.txt
+LRY_COMM_PROJECT_FILES
+LRY_COMM_PROJECT_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\lry_comm_static_lib.dsp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\LRY_COMM\lry_comm_static_lib.dsw
+DB_FILES
+DB_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_DB_STATIC_LIB\xc_db.cpp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_DB_STATIC_LIB\xc_db.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_DB_STATIC_LIB\xc_db_static_lib.dsp
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_DB_STATIC_LIB\xc_db_static_lib.plg
+TIMER_FILES
+TIMER_FILES
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\packets.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\stdio.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\misc.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\xc_time.c
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\EXTERNAL.H
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\function.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\MAIN.H
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\x_header.h
+F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\XC_IO.H
+
+[State]
+SysSetCwd='\\\Phantom\ss_documentation\transponders'
+SrchSetFlags=0x0403700b
+FileSortMode=0x0
+StateWindowFrame=314,475,912,1033,0x23097fca
+_StateWindow=132,174,1546,373,0x00100018,'E:\obj\original_daq_module\readme.txt',240,15,244,4,20,12,46,26,126,176,8,4294967295,4294967295,1,10,'',12,255,48,0,10,499,0,0,753,252,249,16,1,400,0,244,246,242,252,753,753,752,761,253,80,0,253,224,14,1,1,208,1
+_StateWindow=110,145,1546,373,0x00100008,'F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL.H',240,15,244,4,20,12,46,26,126,176,8,4294967295,4294967295,0,10,'',12,255,48,0,10,499,0,0,753,252,249,27,1,400,0,244,246,242,252,753,753,752,761,253,80,0,253,224,14,1,1,208,2
+_StateWindow=0,159,839,159,0x00100008,'F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer.c',240,15,244,4,20,12,46,26,126,176,8,4294967295,4294967295,0,10,'',12,255,48,0,10,499,0,0,753,252,249,114,112,400,0,244,246,242,252,753,753,752,761,253,80,0,253,224,14,86,1,208,3
+_StateWindow=0,0,839,159,0x00100008,'F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_appDlg.cpp',240,15,244,4,20,12,46,26,126,176,8,4294967295,4294967295,0,10,'',12,255,48,0,10,499,0,0,753,252,249,955,35,400,0,244,246,242,252,753,753,752,761,253,80,0,253,224,14,943,1,208,4
+_StateBuffer='E:\obj\original_daq_module\readme.txt',0x04000482,16,1,25,'5 9','',0x0,'',1,72
+_StateBuffer='F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL.H',0x04000486,27,1,25,'5 9','',0x0,'',1,72
+_StateBuffer='F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer.c',0x0c000486,114,112,25,'5 9','',0x0,'',1,72
+_StateBuffer='F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\data_acquisition_module_app\timer_appDlg.cpp',0x04000482,955,35,25,'5 9','',0x0,'',1,72
+_StateHistory=FILELIST,'F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\function.h','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\MAIN.h','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\misc.c','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\packets.c','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\Stdio.c','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\x_header.h','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\XC_IO.h','F:\CVS_SANDBOX\SOFTWARE\ORIGINAL_SRT_DATA_ACQUISITION_MODULE\CODE\XC_TIMER\COMMON\xc_time.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL.H','E:\obj\original_daq_module\readme.txt'
+_StateHistory=SEARCH,'read_ini_file_flag','dll_initialize_dll_task','delete_backup','DELETE_BACKUP_RECORDS_CHAR','dll_delete_records_in_backup_text_file','backup_file_path_and_name','create_backup_text_file','release_date','0x090601','0x090604'
+_StateHistory=REPLACE,'timer_events_enabled_flag','delete_database_records','dll_put_timer_structure_into_fifo','initialization_in_progress_flag','number_of_records_acquired','success_flag','Attempting to Open','v.txt','0x090601','0x090604'
+_StateHistory=XSYMBOL,'DAQ_SOFTWARE_VERSION_DATE_STRING','comm_open','win_open_file','report_windows_error','dll_set_comm_port','RELEASE_DATE','dll_initialize_dll_task','dll_delete_records_in_backup_text_file','get_file_path_and_name_from_parts','create_backup_text_file'
+_StateHistory=EDITFILE,'G:\xc_timing\dll_log.txt','F:\cvs_sandbox\website\www_summit_timing\summit_timing_web_site.pjt'
+_StateHistory=DIFFFILE,'F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_db_static_lib\xc_db_061203.cpp','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_030613.h','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\backgrnd_061204.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commport_061204.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_090508.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_030613.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_061203.h','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL_031230.H','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL_061203.H','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer.c'
+_StateHistory=PRNHEADER,'%p                                              %b%e at %t on %d'
+_StateHistory=DIFFTARGET,'F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_061203.h','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\backgrnd_030613.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\commport_031108.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_030613.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_090528.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\lry_comm\winfile_030613.h','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL_061203.H','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\XC_timer_DLL_090528.H','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer_061204.c','F:\cvs_sandbox\software\original_srt_data_acquisition_module\code\xc_timer_dll\xc_timer_090528.c'
+
+[Editor]
+VCSProject=''
+VCSProjectPath=''
+VCSProjectLocalPath=''
+ClipboardSetTermStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableSepStr=1
+ScrapSetCount=1
+
+[Compiler]
+TagSetCmd='${HOME}${WTAGS} -oc -d -t${TAGFILE}.tag -p${TAGFILE}.ptg',0x8000060
+BrowseSetFile='F:\xc_timer_app\xc_timer_app.ptg'
+TagSetFile='F:\xc_timer_app\xc_timer_app.tag'
+CompilerAddCmd='$_cw_proj_hash_$','',1073741904,'',80,'${FTEE} nmake',176,'${FTEE} nmake',176,'',0,'',0,'_ErrorInfoDefault','','','proj.err','%x'
+CompilerAddResponse='$_cw_proj_hash_$',
+CompilerNewExt=.htm
+CompilerNewExt=.pas
+CompilerNewExt=.ini
+CompilerNewExt=.html
+CompilerNewExt=.txt
+
+[VersionControl:PVCS]
+VCSSetCmd=VCS_CHECKIN_ID,'put -n -T@%Q -M@%Q %b%e',0x8000040
+VCSSetCmd=VCS_CHECKINLOCK_ID,'put -n -T@%Q -M@%Q -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKOUT_ID,'get -y %b%e',0x8000040
+VCSSetCmd=VCS_CHECKOUTLOCK_ID,'get -y -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLOCK_ID,'vcs -y -l %b%e',0x8000040
+VCSSetCmd=VCS_CHECKUNLOCK_ID,'vcs -y -u %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLABEL_ID,'vcs -y -v"${VCSLABEL}" %b%e',0x8000040
+VCSSetCmd=VCS_CHECKLOG_ID,'vlog %b%e',0x8000040
+VCSSetCmd=VCS_CHECKPROP_ID,'vlog -b %b%e',0x8000040
+VCSSetCmd=VCS_CHECKDIFF_ID,'vdiff -r %b%e',0x8000040
+VCSSetCmd=VCS_CHECKMENU_ID,'pvcsvmwn',0x8000000
+VCSSetCmd=VCS_ADD_ID,'vcs -i -t@%Q %b%e',0x8000040
+VCSSetCmd=VCS_REMOVE_ID,'del /f %b%{??v|___}e',0x8000040
